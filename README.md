@@ -4,7 +4,7 @@ MVVM andrioid note taking app
 
 
 ![GitHub](https://img.shields.io/github/license/Lamun365/Notepad?color=blue)
-![Twitter Badge](https://img.shields.io/badge/-follow-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/jamesi_lemon333)
+[![Twitter Badge](https://img.shields.io/badge/follow-blue.svg?style=social&logo=twitter)](https://twitter.com/jamesi_lemon333)
 
 **Notepad** is a open source note taking app that follows MVVM architectural design pattern 
 
