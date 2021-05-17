@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemFragment">
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.lexo.notepad.ui.fragment.ItemFragment"
+        android:label="Notepad"
+        tools:layout="@layout/note_view_fragment" >
+        <action
+            android:id="@+id/action_itemFragment_to_addItemDialogFragment"
+            app:destination="@id/addItemDialogFragment" />
+        <action
+            android:id="@+id/action_itemFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+        <action
+            android:id="@+id/action_itemFragment_to_editChecklistFragment"
+            app:destination="@id/editChecklistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.lexo.notepad.ui.fragment.EditNoteFragment"
+        android:label="Edit"
+        tools:layout="@layout/edit_item_note" >
+        <argument
+            android:name="noteTask"
+            app:argType="com.lexo.notepad.db.Task"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="isEditMode"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/editChecklistFragment"
+        android:name="com.lexo.notepad.ui.fragment.EditChecklistFragment"
+        android:label="Edit"
+        tools:layout="@layout/edit_item_checklist">
+        <action
+            android:id="@+id/action_editChecklistFragment_to_addChecklistDialogFragment"
+            app:destination="@id/addChecklistDialogFragment" />
+        <argument
+            android:name="checklistTask"
+            app:argType="com.lexo.notepad.db.Task"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="isEditChecklist"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <dialog
+        android:id="@+id/addItemDialogFragment"
+        android:name="com.lexo.notepad.ui.dialog.AddItemDialogFragment"
+        android:label="add_item_dialog"
+        tools:layout="@layout/add_item_dialog" >
+        <action
+            android:id="@+id/action_addItemDialogFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+        <action
+            android:id="@+id/action_addItemDialogFragment_to_editChecklistFragment"
+            app:destination="@id/editChecklistFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/addChecklistDialogFragment"
+        android:name="com.lexo.notepad.ui.dialog.AddChecklistDialogFragment"
+        android:label="add_checklist_dialog"
+        tools:layout="@layout/add_checklist_dialog" >
+        <action
+            android:id="@+id/action_addChecklistDialogFragment_to_editChecklistFragment"
+            app:destination="@id/editChecklistFragment"
+            app:popUpTo="@id/editChecklistFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+</navigation>

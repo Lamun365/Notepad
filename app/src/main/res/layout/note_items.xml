@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="16dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#262626">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/item_heading_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="25sp"
+            tools:text="Heading is new android. it's new to android. Heading is new android. it's new to android"
+            android:textColor="#E1E0DF"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/item_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_heading_text_view"
+            android:layout_marginTop="8dp"
+            android:maxLines="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            tools:text="hello world\n im z\n hello\n z\n a"
+            android:textColor="#E1E0DF"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

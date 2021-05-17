@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_note">Title</string>
+    <string name="note_content_hint">Note</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="note">Note</string>
+    <string name="checklist">Checklist</string>
+    <string name="add_item">Add Item</string>
+    <string name="add">Add</string>
+</resources>

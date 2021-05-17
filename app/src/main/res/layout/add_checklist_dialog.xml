@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="#262626"
+    android:padding="10dp"
+    tools:context=".ui.dialog.AddChecklistDialogFragment">
+
+    <EditText
+        android:id="@+id/dialog_add_item_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="@string/add_item"
+        android:textAlignment="center"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="#BDBFBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fab_add_checklist"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_add"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/dialog_add_item_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/secondaryDarkColor"/>
+
+    <ImageView
+        android:id="@+id/fab_edit_checklist"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:tint="@color/white"
+        android:src="@drawable/ic_baseline_edit"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/dialog_add_item_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/secondaryDarkColor"
+        android:visibility="gone"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
