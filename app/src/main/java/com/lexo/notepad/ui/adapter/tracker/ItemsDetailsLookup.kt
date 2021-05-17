@@ -1,9 +1,9 @@
-package com.lexo.notepad.tracker
+package com.lexo.notepad.ui.adapter.tracker
 
 import android.view.MotionEvent
 import androidx.recyclerview.selection.ItemDetailsLookup
 import androidx.recyclerview.widget.RecyclerView
-import com.lexo.notepad.adapter.ItemAdapter
+import com.lexo.notepad.ui.adapter.ItemAdapter
 import com.lexo.notepad.db.Task
 
 class ItemsDetailsLookup(

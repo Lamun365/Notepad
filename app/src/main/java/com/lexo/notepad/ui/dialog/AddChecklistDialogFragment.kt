@@ -12,7 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.lexo.notepad.databinding.AddChecklistDialogBinding
 import com.lexo.notepad.db.ChecklistItem
-import com.lexo.notepad.viewmodel.EditChecklistViewModel
+import com.lexo.notepad.ui.viewmodel.EditChecklistViewModel
 import com.lexo.notepad.util.exhaustive
 import kotlinx.coroutines.flow.collect
 

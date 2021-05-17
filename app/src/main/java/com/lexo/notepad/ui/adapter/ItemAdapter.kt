@@ -1,4 +1,4 @@
-package com.lexo.notepad.adapter
+package com.lexo.notepad.ui.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -12,7 +12,9 @@ import com.lexo.notepad.databinding.NoteItemsBinding
 import com.lexo.notepad.db.Task
 import com.lexo.notepad.util.toBulletList
 
-class ItemAdapter(private val listener: OnItemClickListener): ListAdapter<Task, ItemAdapter.ItemViewHolder>(DiffCallBack()) {
+class ItemAdapter(private val listener: OnItemClickListener): ListAdapter<Task, ItemAdapter.ItemViewHolder>(
+    DiffCallBack()
+) {
 
     var tracker: SelectionTracker<Task>? = null
 

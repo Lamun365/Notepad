@@ -15,7 +15,7 @@ import androidx.navigation.fragment.findNavController
 import com.lexo.notepad.R
 import com.lexo.notepad.databinding.EditItemNoteBinding
 import com.lexo.notepad.util.exhaustive
-import com.lexo.notepad.viewmodel.EditNoteViewModel
+import com.lexo.notepad.ui.viewmodel.EditNoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 

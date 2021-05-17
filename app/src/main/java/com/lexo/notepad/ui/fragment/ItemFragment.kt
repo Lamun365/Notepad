@@ -13,15 +13,15 @@ import androidx.recyclerview.selection.SelectionTracker
 import androidx.recyclerview.selection.StorageStrategy
 import androidx.recyclerview.widget.GridLayoutManager
 import com.lexo.notepad.R
-import com.lexo.notepad.adapter.ItemAdapter
+import com.lexo.notepad.ui.adapter.ItemAdapter
 import com.lexo.notepad.databinding.NoteViewFragmentBinding
 import com.lexo.notepad.db.Task
-import com.lexo.notepad.tracker.ItemsDetailsLookup
-import com.lexo.notepad.tracker.ItemsKeyProvider
+import com.lexo.notepad.ui.adapter.tracker.ItemsDetailsLookup
+import com.lexo.notepad.ui.adapter.tracker.ItemsKeyProvider
 import com.lexo.notepad.util.SortOrder
 import com.lexo.notepad.util.exhaustive
 import com.lexo.notepad.util.onQueryTextChange
-import com.lexo.notepad.viewmodel.ItemViewModel
+import com.lexo.notepad.ui.viewmodel.ItemViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 

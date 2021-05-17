@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.lexo.notepad.R
 import com.lexo.notepad.databinding.AddItemDialogBinding
 import com.lexo.notepad.util.exhaustive
-import com.lexo.notepad.viewmodel.AddItemDialogViewModel
+import com.lexo.notepad.ui.viewmodel.AddItemDialogViewModel
 import kotlinx.coroutines.flow.collect
 
 class AddItemDialogFragment: DialogFragment(R.layout.add_item_dialog) {

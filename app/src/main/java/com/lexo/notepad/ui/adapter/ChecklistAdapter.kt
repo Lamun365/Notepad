@@ -1,4 +1,4 @@
-package com.lexo.notepad.adapter
+package com.lexo.notepad.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

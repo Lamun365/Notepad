@@ -17,10 +17,10 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lexo.notepad.R
-import com.lexo.notepad.adapter.ChecklistAdapter
+import com.lexo.notepad.ui.adapter.ChecklistAdapter
 import com.lexo.notepad.databinding.EditItemChecklistBinding
 import com.lexo.notepad.util.exhaustive
-import com.lexo.notepad.viewmodel.EditChecklistViewModel
+import com.lexo.notepad.ui.viewmodel.EditChecklistViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 

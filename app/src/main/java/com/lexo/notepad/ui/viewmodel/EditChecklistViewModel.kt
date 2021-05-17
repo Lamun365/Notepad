@@ -1,4 +1,4 @@
-package com.lexo.notepad.viewmodel
+package com.lexo.notepad.ui.viewmodel
 
 
 import androidx.lifecycle.*
